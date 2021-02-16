@@ -1,5 +1,5 @@
 # Jiggle
-A small, simple Powershell script(Jiggle.ps1) to stop a PC from locking by moving the mouse every 4 Minutes and 50 seconds by 1 pixel.
+A small, simple Powershell [script](Jiggle.ps1) to stop a PC from locking by moving the mouse every 4 Minutes and 50 seconds by 1 pixel.
 
 This avoids automatic forced locking by inactivity.
 
