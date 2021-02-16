@@ -3,7 +3,7 @@ A small, simple Powershell script(Jiggle.ps1) to stop a PC from locking by movin
 
 This avoids automatic forced locking by inactivity.
 
-And since it is just a plain text file with a Powershell script, it runs using the Windows supplied Powershell.
+And since it is just a plain text file with a Powershell script, it runs using the Windows supplied Powershell. No executable, no dependencies.
 
 # Setup
 1. Download the script [Jiggle.ps1](Jiggle.ps1) (or copy & paste or email/message the text to you, depending if you have download restrictions) and save it as a simple text file (e.g. jiggle.ps1)
