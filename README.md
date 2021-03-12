@@ -51,7 +51,7 @@ You can check, that is it running in the Task Manager (Details view, show the 'C
 
 
 # Autorun
-See [Autostart_Jiggle.ps1](Autostart_Jiggle.ps1)
+To create an Autostart for the Jiggle script, run [Autostart_Jiggle.ps1](Autostart_Jiggle.ps1). 
 
 
 
