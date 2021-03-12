@@ -43,7 +43,9 @@ If you start the script, it opens a window. If you dont want that, you can run t
 ```
 powershell "$s=(New-Object System.Diagnostics.ProcessStartInfo);$s.Arguments='-ExecutionPolicy Unrestricted -NoExit -File <PATH TO YOUR JIGGLE SCRIPT WITHOUT BLANKS>';$s.FileName='powershell.exe';$s.WindowStyle=[System.Diagnostics.ProcessWindowStyle]::Hidden; [System.Diagnostics.Process]::Start($s)"
 ```
-(Just replace the ``<PATH TO YOUR JIGGLE SCRIPT WITHOUT BLANKS>`` with the path to your Jiggle.ps1 script, but make sure there are no blanks in the path.
+(Just replace the ``<PATH TO YOUR JIGGLE SCRIPT WITHOUT BLANKS>`` with the path to your Jiggle.ps1 script, but make sure there are no blanks in the path.)
+This little trick is actually a mini powershell script within the command line, that uses the DotNet Process API to start your script and set the window of your script to being invisible. 
+You can check, that is it running in the Task Manager (Details view, show the 'Command line' columns and see powershell processes).
 
 
 # Autorun
