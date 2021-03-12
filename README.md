@@ -36,3 +36,18 @@ Try changing the x and y to 0: ``$x.MoveContinously(0, 0, 290000)``
 
 This "theoretical" movement of the mouse by zero pixels is enough to fool for example the Windows Screensaver from starting.
 Other application, e.g. Citrix cannot be fooled by this. For that, you need to move the mouse for at least 1 pixel.
+
+
+# Run without a visible window
+If you start the script, it opens a window. If you dont want that, you can run the following command:
+```
+powershell "$s=(New-Object System.Diagnostics.ProcessStartInfo);$s.Arguments='-ExecutionPolicy Unrestricted -NoExit -File <PATH TO YOUR JIGGLE SCRIPT WITHOUT BLANKS>';$s.FileName='powershell.exe';$s.WindowStyle=[System.Diagnostics.ProcessWindowStyle]::Hidden; [System.Diagnostics.Process]::Start($s)"
+```
+(Just replace the ``<PATH TO YOUR JIGGLE SCRIPT WITHOUT BLANKS>`` with the path to your Jiggle.ps1 script, but make sure there are no blanks in the path.
+
+
+# Autorun
+See [Autostart_Jiggle.ps1](Autostart_Jiggle.ps1)
+
+
+
